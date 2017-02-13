@@ -2,7 +2,7 @@ body {
       position: relative;
   }
   ul.nav-pills{
-      top: 200px;
+      top: 100px;
       position: fixed;
   }
   div.col-sm-9 div {
