@@ -1,0 +1,11 @@
+body {
+      position: relative;
+  }
+  ul.nav-pills{
+      top: 200px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
