@@ -14,20 +14,24 @@ and open the template in the editor.
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+        <div class="preheader" style="height: 30px">
+           
+        </div>
         
         <header class="container" id="section1">
+            <img class="img-responsive center-block" src="img/greenCar.png" alt=""/>
             <h1 class="text-center">Portale Mobility</h1>
             <h3 class="text-right">di Roberta Facchi</h3>
         </header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <nav class="col-md-3" id="myScrollspy">
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="#section1">Progetto di lavoro</a></li>
+                <nav class="col-md-3 center-block" id="myScrollspy">
+                    <ul class="nav nav-tabs-justified flat">
+                        <li class="active"><a href="#section1">Progetto di lavoro Portale Mobility</a></li>
                         <li><a href="#section2">Consegna</a></li>
-                        <li class="dropdown">
-                            <a data-toggle="dropdown" href="#">Design<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
+                        <li class="">
+                            <span class="btn" id="flip1">Design</span>
+                            <ul class="nav nav-tabs nav-stacked" id="panelN1">
                                 <li><a href="#section31"/>Una pagina Responsive</a></li>
                                 <li><a href="#section32"/>Design Desktop</a></li>
                                 <li><a href="#section33"/>Design Tablet</a></li>
@@ -37,13 +41,13 @@ and open the template in the editor.
                             </ul>
                         </li>
                             
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
+                        <!--<li class="">
+                            <a id="flip2" href="#">Funzionalità<span class="caret"></span></a>
+                            <ul class="nav nav-tabs nav-stacked" id="panelN2">
                                 <li><a href="#section41">Section 4-1</a></li>
                                 <li><a href="#section42">Section 4-2</a></li>                     
                             </ul>
-                        </li>
+                        </li>-->
                         <li></li>
                         <li></li>
                         <li></li>
@@ -80,6 +84,7 @@ and open the template in the editor.
                         
                          
                     </div>
+                    <h1>Design</h1>
                     <div class="panel panel-primary" id="section31">
                         <div class="panel-heading"><h1>Una pagina Responsive</h1></div>
                         <div class="panel-body">
