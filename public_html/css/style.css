@@ -11,6 +11,7 @@ ul.nav-tabs-justified{
     background-color: #fff;
     color:#757575;
     font-size: .8em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #myScrollspy a {
     color:#757575;
@@ -19,10 +20,11 @@ ul.nav-tabs-justified{
 #myScrollspy .nav-tabs-justified>.active>a:focus, 
 #myScrollspy .nav-tabs-justified>.active>a:hover,
 #myScrollspy a:focus,
-#myScrollspy a:hover{
+#myScrollspy a:hover,
+#myScrollspy .active>a{
     background-color: #fff;
     border: 0px;
-    color:#FFC107;
+    color:#E64A19;
     font-weight: bold;
 }
 div.col-sm-9 div {
@@ -35,38 +37,36 @@ div.col-sm-9 div {
 }
 header{
     background-color: rgba(255,87,44,1);
-    
+
 }
 header>div{
-     margin:auto;
-     position:relative;
-     bottom:100px;
-     background-color: rgba(255,87,44,0.4);
-     
+    margin:auto;
+    position:relative;
+    bottom:100px;
+    background-color: rgba(255,87,44,0.4);
+
 }
-header>div>h1{
-    
+.panel-group{
+    padding-top: 2em;
+}
+.panel-primary {
+    border-color: #FFCCBC;
+}
+.panel-primary>.panel-heading {
+    color: #E64A19;
+    background-color: #FFCCBC;
+    border-color: #FFCCBC;
 }
 
 /*Generic classes*/
-.flat{
-    -webkit-border-top-left-radius: 0px;
-    -webkit-border-top-right-radius: 0px;
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    -moz-border-radius-topleft: 0px;
-    -moz-border-radius-topright: 0px;
-    -moz-border-radius-bottomright: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+.btn.focus, .btn:focus, .btn:hover{
+    background-color: #FFCCBC;
+    color:#E64A19;
 }
 
 .parallax {
     /* The image used */
-    background-image: url("../img/parallax.png");
+    background-image: url("../img/bg.jpg");
 
     /* Set a specific height */
     min-height: 500px; 

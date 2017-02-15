@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $("#flip0").click(function () {
+        $("#panelN0").slideToggle("normal");
+    });
     $("#flip1").click(function () {
         $("#panelN1").slideToggle("normal");
     });

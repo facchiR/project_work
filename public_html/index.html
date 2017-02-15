@@ -11,27 +11,30 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/bootstrap-flat/bootstrap-flat.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/palette.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-        <div class="preheader dark-primary-color">
+        <div class="preheader dark-primary-color" id="section0">
 
         </div>
         <div class="parallax">
-            
+
         </div>
-        <header class="container-fluid row text-primary-color" id="section1">
-            <div class="container text-center">
-                <h1 class="text-right secondary-text-color"><strong>Portale Mobility</strong></h1>
+        <header class="container-fluid row text-primary-color">
+            <div class="container text-center" id="section1">
+                <h1 class="text-right"><strong>Portale Mobility</strong></h1>
+                <br/>
+                <br/>
                 <br/>
                 <br/>
                 Realizzato tra dicembre 2016 e gennaio 2017
                 <br/>
                 durante lo stage presso <strong>Virtual</strong>
                 <br/>
-                <br/>
-                <br/>
+                
+                
             </div>
             <div class="container">
                 <h3 class="text-right">di <strong>Roberta Facchi</strong></h3>
@@ -41,27 +44,34 @@ and open the template in the editor.
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-3 center-block" id="myScrollspy">
-                    <ul class="nav nav-tabs-justified flat">
-                        <li class="active text-uppercase"><a class="" href="#section1">Progetto di lavoro Portale Mobility</a></li>
-                        <li><a href="#section2">Consegna</a></li>
-                        <li><a href="#section21">Tecnologie</a></li>
+                    <ul class="nav nav-tabs-justified">
+                        <li><a class="btn" href="#section0"><i class="fa fa-chevron-up fa-lg"></i></a></li>
+                        <li class="active text-uppercase title"><a class="" href="#section1">Progetto di lavoro Portale Mobility</a></li>
+                        <li>
+                            <span class="btn btn-lg" id="flip0">In Breve</span>
+                            <ul class="nav nav-tabs nav-stacked" id="panelN0">
+                                <li class="active"><a href="#section2">Consegna</a></li>
+                                <li class="active"><a href="#section21">Tecnologie</a></li>
+                            </ul>
+                        </li>
+
                         <li class="">
                             <span class="btn btn-lg" id="flip1">Design</span>
                             <ul class="nav nav-tabs nav-stacked" id="panelN1">
-                                <li><a href="#section31"/>Una pagina Responsive</a></li>
-                                <li><a href="#section32"/>Design Desktop</a></li>
-                                <li><a href="#section33"/>Design Tablet</a></li>
-                                <li><a href="#section34"/>Design Mobile</a></li>
-                                <li><a href="#section35"/>Navigabilità della pagina</a></li>
+                                <li class="active" ><a href="#section31"/>Una pagina Responsive</a></li>
+                                <li class="active"><a href="#section32"/>Design Desktop</a></li>
+                                <li class="active"><a href="#section33"/>Design Tablet</a></li>
+                                <li class="active"><a href="#section34"/>Design Mobile</a></li>
+                                <li class="active"><a href="#section35"/>Navigabilità della pagina</a></li>
                             </ul>
                         </li>
 
                         <li class="">
                             <span class="btn btn-lg" id="flip2">Funzionalità</span>
                             <ul class="nav nav-tabs nav-stacked" id="panelN2">
-                                <li><a href="#section41">Mappa e ChargePoints</a></li>
-                                <li><a href="#section42">Ricerche sulla mappa</a></li>                     
-                                <li><a href="#section43">Informazioni sulla mappa</a></li>                     
+                                <li class="active"><a href="#section41">Mappa e ChargePoints</a></li>
+                                <li class="active"><a href="#section42">Ricerche sulla mappa</a></li>                     
+                                <li class="active"><a href="#section43">Informazioni sulla mappa</a></li>                     
                             </ul>
                         </li>
                         <li></li>
@@ -131,7 +141,7 @@ and open the template in the editor.
                     </div>
                     <h1>Design</h1>
                     <div class="panel panel-primary" id="section31">
-                        <div class="panel-heading"><h1>Una pagina Responsive</h1></div>
+                        <div class="panel-heading"><h3>Una pagina Responsive</h3></div>
                         <div class="panel-body">
                             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
@@ -161,7 +171,7 @@ and open the template in the editor.
 
                     </div>
                     <div class="panel panel-primary" id="section32">
-                        <div class="panel-heading"><h1>Design Desktop</h1></div>
+                        <div class="panel-heading"><h3>Design Desktop</h3></div>
                         <div class="panel-body">
                             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
@@ -190,7 +200,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="panel panel-primary" id="section33">
-                        <div class="panel-heading"><h1>Design Tablet</h1></div>
+                        <div class="panel-heading"><h3>Design Tablet</h3></div>
                         <div class="panel-body">
                             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
@@ -219,7 +229,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="panel panel-primary" id="section34">
-                        <div class="panel-heading"><h1>Design Mobile</h1></div>
+                        <div class="panel-heading"><h3>Design Mobile</h3></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
                                 ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
@@ -247,7 +257,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="panel panel-primary" id="section35">
-                        <div class="panel-heading"><h1>Navigabilità della pagina</h1></div>
+                        <div class="panel-heading"><h3>Navigabilità della pagina</h3></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
                                 ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
@@ -362,7 +372,7 @@ and open the template in the editor.
                     <div>TODO</div>
                 </div>
 
-               
+
 
 
 
