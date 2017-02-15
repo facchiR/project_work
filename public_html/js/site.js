@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     $("#flip0").click(function () {
         $("#panelN0").slideToggle("normal");
     });
@@ -7,6 +8,9 @@ $(document).ready(function () {
     });
     $("#flip2").click(function () {
         $("#panelN2").slideToggle("normal");
+    });
+    $("#flip3").click(function () {
+        $("#panelN3").slideToggle("normal");
     });
 
     // Add smooth scrolling on all links inside the navbar

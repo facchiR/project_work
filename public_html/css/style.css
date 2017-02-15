@@ -27,6 +27,9 @@ ul.nav-tabs-justified{
     color:#E64A19;
     font-weight: bold;
 }
+#panelN0, #panelN1, #panelN2, #panelN3{
+    display:none;
+}
 div.col-sm-9 div {
     height: 250px;
     font-size: 28px;
@@ -42,7 +45,7 @@ header{
 header>div{
     margin:auto;
     position:relative;
-    bottom:100px;
+    bottom:65px;
     background-color: rgba(255,87,44,0.4);
 
 }
