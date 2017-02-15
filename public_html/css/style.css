@@ -1,15 +1,16 @@
 body {
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 ul.nav-tabs-justified{
-    left:2em;
+    left:1.5em;
     top: 100px;
     padding:2em;
     margin: auto;
     position: fixed;
     background-color: #fff;
     color:#757575;
+    font-size: .8em;
 }
 #myScrollspy a {
     color:#757575;
@@ -34,13 +35,14 @@ div.col-sm-9 div {
 }
 header{
     background-color: rgba(255,87,44,1);
+    
 }
 header>div{
      margin:auto;
      position:relative;
      bottom:100px;
      background-color: rgba(255,87,44,0.4);
-     font-size: 1.5em;
+     
 }
 header>div>h1{
     
