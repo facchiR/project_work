@@ -11,43 +11,57 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/palette.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-        <div class="preheader" style="height: 30px">
-           
+        <div class="preheader dark-primary-color">
+
         </div>
-        
-        <header class="container" id="section1">
-            <img class="img-responsive center-block" src="img/greenCar.png" alt=""/>
-            <h1 class="text-center">Portale Mobility</h1>
-            <h3 class="text-right">di Roberta Facchi</h3>
+        <div class="parallax">
+            
+        </div>
+        <header class="container-fluid row default-primary-color text-primary-color" id="section1">
+            <div class="container text-center">
+                <h1 class=""><strong>Portale Mobility</strong></h1>
+                <br/>
+                <br/>
+                Realizzato tra dicembre 2016 e gennaio 2017
+                <br/>
+                durante lo stage presso <strong>Virtual</strong>
+                <br/>
+                <br/>
+                <br/>
+                <h3 class="text-right">di <strong>Roberta Facchi</strong></h3>
+                <p class="text-right">in collaborazione con <strong>Maurizio Caria</strong></p>
+            </div>
         </header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-3 center-block" id="myScrollspy">
                     <ul class="nav nav-tabs-justified flat">
-                        <li class="active"><a href="#section1">Progetto di lavoro Portale Mobility</a></li>
+                        <li class="active text-uppercase"><a class="" href="#section1">Progetto di lavoro Portale Mobility</a></li>
                         <li><a href="#section2">Consegna</a></li>
+                        <li><a href="#section21">Tecnologie</a></li>
                         <li class="">
-                            <span class="btn" id="flip1">Design</span>
+                            <span class="btn btn-lg" id="flip1">Design</span>
                             <ul class="nav nav-tabs nav-stacked" id="panelN1">
                                 <li><a href="#section31"/>Una pagina Responsive</a></li>
                                 <li><a href="#section32"/>Design Desktop</a></li>
                                 <li><a href="#section33"/>Design Tablet</a></li>
                                 <li><a href="#section34"/>Design Mobile</a></li>
                                 <li><a href="#section35"/>Navigabilità della pagina</a></li>
-                                
                             </ul>
                         </li>
-                            
-                        <!--<li class="">
-                            <a id="flip2" href="#">Funzionalità<span class="caret"></span></a>
+
+                        <li class="">
+                            <span class="btn btn-lg" id="flip2">Funzionalità</span>
                             <ul class="nav nav-tabs nav-stacked" id="panelN2">
-                                <li><a href="#section41">Section 4-1</a></li>
-                                <li><a href="#section42">Section 4-2</a></li>                     
+                                <li><a href="#section41">Mappa e ChargePoints</a></li>
+                                <li><a href="#section42">Ricerche sulla mappa</a></li>                     
+                                <li><a href="#section43">Informazioni sulla mappa</a></li>                     
                             </ul>
-                        </li>-->
+                        </li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -58,197 +72,312 @@ and open the template in the editor.
                     <div class="panel panel-primary" id="section2">
                         <div class="panel-heading"><h1>Consegna</h1></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
-                        metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
-                        ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
-                        enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
-                        ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
-                        in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
-                        amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
-                        Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
-                        felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
-                        varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
-                        ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
-                        Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
-                        tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
-                        nisi. Nam consectetur velit ac pharetra venenatis.</p>
-                    <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
-                        eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
-                        luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
-                        euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
-                        vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
-                        condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
-                        a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
-                        mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
-                        amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
-                        fringilla. In ac erat non magna accumsan aliquam.</p></div>
-                        
-                         
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p></div>
+
+
+                    </div>
+                    <div class="panel panel-primary" id="section21">
+                        <div class="panel-heading"><h1>Tecnologie</h1></div>
+                        <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p></div>
+
+
                     </div>
                     <h1>Design</h1>
                     <div class="panel panel-primary" id="section31">
                         <div class="panel-heading"><h1>Una pagina Responsive</h1></div>
                         <div class="panel-body">
-                         <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
-                        metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
-                        ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
-                        enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
-                        ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
-                        in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
-                        amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
-                        Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
-                        felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
-                        varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
-                        ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
-                        Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
-                        tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
-                        nisi. Nam consectetur velit ac pharetra venenatis.</p>
-                    <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
-                        eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
-                        luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
-                        euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
-                        vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
-                        condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
-                        a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
-                        mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
-                        amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
-                        fringilla. In ac erat non magna accumsan aliquam.</p> 
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p> 
+                        </div>
+
                     </div>
                     <div class="panel panel-primary" id="section32">
                         <div class="panel-heading"><h1>Design Desktop</h1></div>
                         <div class="panel-body">
-                         <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
-                        metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
-                        ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
-                        enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
-                        ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
-                        in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
-                        amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
-                        Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
-                        felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
-                        varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
-                        ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
-                        Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
-                        tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
-                        nisi. Nam consectetur velit ac pharetra venenatis.</p>
-                    <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
-                        eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
-                        luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
-                        euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
-                        vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
-                        condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
-                        a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
-                        mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
-                        amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
-                        fringilla. In ac erat non magna accumsan aliquam.</p> 
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p> 
                         </div>
                     </div>
                     <div class="panel panel-primary" id="section33">
                         <div class="panel-heading"><h1>Design Tablet</h1></div>
                         <div class="panel-body">
-                         <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
-                        metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
-                        ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
-                        enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
-                        ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
-                        in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
-                        amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
-                        Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
-                        felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
-                        varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
-                        ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
-                        Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
-                        tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
-                        nisi. Nam consectetur velit ac pharetra venenatis.</p>
-                    <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
-                        eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
-                        luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
-                        euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
-                        vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
-                        condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
-                        a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
-                        mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
-                        amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
-                        fringilla. In ac erat non magna accumsan aliquam.</p> 
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p> 
                         </div>
                     </div>
                     <div class="panel panel-primary" id="section34">
                         <div class="panel-heading"><h1>Design Mobile</h1></div>
-                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
-                        metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
-                        ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
-                        enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
-                        ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
-                        in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
-                        amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
-                        Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
-                        felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
-                        varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
-                        ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
-                        Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
-                        tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
-                        nisi. Nam consectetur velit ac pharetra venenatis.</p>
-                    <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
-                        eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
-                        luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
-                        euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
-                        vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
-                        condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
-                        a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
-                        mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
-                        amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
-                        fringilla. In ac erat non magna accumsan aliquam.</p> 
-                         </div>
+                        <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p> 
+                        </div>
                     </div>
                     <div class="panel panel-primary" id="section35">
                         <div class="panel-heading"><h1>Navigabilità della pagina</h1></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
-                        metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
-                        ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
-                        enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
-                        ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
-                        in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
-                        amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
-                        Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
-                        felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
-                        varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
-                        ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
-                        Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
-                        tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
-                        nisi. Nam consectetur velit ac pharetra venenatis.</p>
-                    <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
-                        eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
-                        luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
-                        euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
-                        vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
-                        condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
-                        a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
-                        mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
-                        amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
-                        fringilla. In ac erat non magna accumsan aliquam.</p> 
-                    
-                    
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p>                                         
+                        </div>
+                    </div>
+                    <h1>Funzionalità</h1>
+                    <div class="panel panel-primary" id="section41">
+                        <div class="panel-heading"><h1>Mappa e Charge Points</h1></div>
+                        <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p>                                         
+                        </div>
+                    </div>
+                    <div class="panel panel-primary" id="section42">
+                        <div class="panel-heading"><h1>Ricerche sulla mappa</h1></div>
+                        <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p>                                         
+                        </div>
+                    </div>
+                    <div class="panel panel-primary" id="section43">
+                        <div class="panel-heading"><h1>Informazioni sulla mappa</h1></div>
+                        <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p>                                         
+                        </div>
+                    </div>
+                    <div>TODO</div>
                 </div>
-            </div>
-        </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        <script src="lib/jquery/jquery-3.1.1.js" type="text/javascript"></script>
-        <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/site.js" type="text/javascript"></script>
-    </body>
-</html>
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script src="lib/jquery/jquery-3.1.1.js" type="text/javascript"></script>
+                <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+                <script src="js/site.js" type="text/javascript"></script>
+                </body>
+                </html>

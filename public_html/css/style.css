@@ -1,29 +1,75 @@
 body {
-      position: relative;
-  }
-  ul.nav-tabs-justified{
-      top: 100px;
-      position: fixed;
-  }
-  div.col-sm-9 div {
-      height: 250px;
-      font-size: 28px;
-  }
-  
-  
-  /*Generic classes*/
-  .flat{
-  -webkit-border-top-left-radius: 0px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+    position: relative;
+    font-size: 1.5em;
+}
+ul.nav-tabs-justified{
+    left:2em;
+    top: 100px;
+    padding:2em;
+    margin: auto;
+    position: fixed;
+    background-color: #fff;
+    color:#757575;
+}
+#myScrollspy a {
+    color:#757575;
+}
+#myScrollspy .nav-tabs-justified>.active>a, 
+#myScrollspy .nav-tabs-justified>.active>a:focus, 
+#myScrollspy .nav-tabs-justified>.active>a:hover,
+#myScrollspy a:focus,
+#myScrollspy a:hover{
+    background-color: #fff;
+    border: 0px;
+    color:#FFC107;
+    font-weight: bold;
+}
+div.col-sm-9 div {
+    height: 250px;
+    font-size: 28px;
 }
 
+.preheader{
+    height: 2.5em;
+}
+header, header h1, header h3{
+    font-size: 1.8em;
+}
+header>div{
+     margin:auto;
+     position:relative;
+     bottom:100px;
+}
+header>div>h1{
+    
+}
+
+/*Generic classes*/
+.flat{
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/sfondo1crop.png");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
