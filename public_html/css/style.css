@@ -2,7 +2,7 @@ body {
     position: relative;
     font-size: 1.9em;
 }
-ul.nav-tabs-justified{
+#accordion{
     left:1.5em;
     top: 100px;
     padding:2em;
@@ -13,10 +13,8 @@ ul.nav-tabs-justified{
     font-size: .8em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#myScrollspy a {
-    color:#757575;
-}
-#myScrollspy .nav-tabs-justified>.active>a, 
+
+/*#myScrollspy .nav-tabs-justified>.active>a, 
 #myScrollspy .nav-tabs-justified>.active>a:focus, 
 #myScrollspy .nav-tabs-justified>.active>a:hover,
 #myScrollspy a:focus,
@@ -26,9 +24,9 @@ ul.nav-tabs-justified{
     border: 0px;
     color:#E64A19;
     font-weight: bold;
-}
+}*/
 #panelN0, #panelN1, #panelN2, #panelN3{
-    display:none;
+    /*display:none;*/
 }
 div.col-sm-9 div {
     height: 250px;
@@ -40,6 +38,7 @@ div.col-sm-9 div {
 }
 header{
     background-color: rgba(255,87,44,1);
+    border-bottom: 3px solid #E64A19;
 
 }
 header>div{
@@ -49,11 +48,16 @@ header>div{
     background-color: rgba(255,87,44,0.4);
 
 }
-.panel-group{
+#content{
     padding-top: 2em;
+}
+#content h1{
+    padding-left: 1.5em;
+    padding-top: 1.8em;
 }
 .panel-primary {
     border-color: #FFCCBC;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
 }
 .panel-primary>.panel-heading {
     color: #E64A19;
@@ -62,17 +66,27 @@ header>div{
 }
 
 /*Generic classes*/
-.btn.focus, .btn:focus, .btn:hover{
+
+.btn-lg.focus, .btn-lg:focus, .btn-lg:hover{
     background-color: #FFCCBC;
     color:#E64A19;
 }
-
+a {
+    color:#757575;
+}
+a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: #E64A19;
+}
+ul{
+    list-style-type: none;
+}
 .parallax {
     /* The image used */
     background-image: url("../img/bg.jpg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 600px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

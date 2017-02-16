@@ -15,7 +15,7 @@ and open the template in the editor.
         <link href="css/palette.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" href="favicon.ico"/>
-    
+
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
         <div class="preheader dark-primary-color" id="section0">
@@ -41,54 +41,98 @@ and open the template in the editor.
         </header>
         <div class="container-fluid">
             <div class="row">
-                <nav class="col-md-3 center-block" id="myScrollspy">
-                    <ul class="nav nav-tabs-justified">
-                        <li><a class="btn" href="#section0"><i class="fa fa-chevron-up fa-lg"></i></a></li>
-                        <li class="active text-uppercase title"><a class="" href="#section1">Progetto di lavoro Portale Mobility</a></li>
-                        <li>
-                            <span class="btn btn-lg" id="flip0">In Breve</span>
-                            <ul class="nav nav-tabs nav-stacked" id="panelN0">
-                                <li class="active"><a href="#section2">Consegna</a></li>
-                                <li class="active"><a href="#section21">Tecnologie</a></li>
-                            </ul>
-                        </li>
+                <div class="col-md-3" id="myScrollspy">
+                    <div class="panel-group" id="accordion">
 
-                        <li class="">
-                            <span class="btn btn-lg" id="flip1">Design</span>
-                            <ul class="nav nav-tabs nav-stacked" id="panelN1">
-                                <li class="active" ><a href="#section31"/>Una pagina Responsive</a></li>
-                                <li class="active"><a href="#section32"/>Design Desktop</a></li>
-                                <li class="active"><a href="#section33"/>Design Tablet</a></li>
-                                <li class="active"><a href="#section34"/>Design Mobile</a></li>
-                                <li class="active"><a href="#section35"/>Navigabilità della pagina</a></li>
-                            </ul>
-                        </li>
 
-                        <li class="">
-                            <span class="btn btn-lg" id="flip2">Funzionalità</span>
-                            <ul class="nav nav-tabs nav-stacked" id="panelN2">
-                                <li class="active"><a href="#section41">Mappa e ChargePoints</a></li>
-                                <li class="active"><a href="#section42">Ricerche sulla mappa</a></li>                     
-                                <li class="active"><a href="#section43">Informazioni sulla mappa</a></li>                     
-                            </ul>
-                        </li>
-                        <li class="">
-                            <span class="btn btn-lg" id="flip3">Funzionalità</span>
-                            <ul class="nav nav-tabs nav-stacked" id="panelN3">
-                                <li class="active"><a href="#section51">Crediti</a></li>
-                                <li class="active"><a href="#section52">Considerazioni</a></li>                     
+                        <p class="text-center"><a class="btn" href="#section0"><i class="fa fa-chevron-up fa-lg"></i></a></p>
+                        <p class="active text-uppercase title"><a class="" href="#section1">Progetto di lavoro Portale Mobility</a></p>
 
-                            </ul>
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </nav>
-                <div class="col-md-9 panel-group">
+                        <div class="panel panel-default">
+                            <div>
+                                <h3 class>
+                                    <a class="btn btn-lg" data-toggle="collapse" data-parent="#accordion" data-target="#panelN0" id="flip0">Premesse</a>
+                                    <a class="btn btn-md pull-right" href="#section20"><i class="fa fa-anchor"></i></a>
+                                </h3>                                       
+                            </div>
+                            <div class="panel-collapse collapse in" id="panelN0">
+                                <ul>
+                                    <li class="active"><a class="btn btn-md" href="#section2">Consegna</a></li>
+                                    <li class="active"><a class="btn btn-md" href="#section21">Tecnologie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="panel panel-default">
+                            <div>
+                                <h3>
+                                    <a class="btn btn-lg" data-toggle="collapse" data-parent="#accordion" data-target="#panelN1" id="flip1">Design</a>
+                                    <a class="btn btn-md pull-right" href="#section30"><i class="fa fa-anchor"></i></a>
+                                </h3>
+                            </div>
+                            <div class="collapse panel-collapse " id="panelN1">
+                                <ul>
+                                    <li class="active" ><a class="btn btn-md" href="#section31"/>Una pagina Responsive</a></li>
+                                    <li class="active"><a class="btn btn-md" href="#section32"/>Design Desktop</a></li>
+                                    <li class="active"><a class="btn btn-md" href="#section33"/>Design Tablet</a></li>
+                                    <li class="active"><a class="btn btn-md" href="#section34"/>Design Mobile</a></li>
+                                    <li class="active"><a class="btn btn-md" href="#section35"/>Navigabilità della pagina</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="panel panel-default">
+                            <div>
+                                <h3>
+                                    <a class="btn btn-lg" data-toggle="collapse" data-parent="#accordion" data-target="#panelN2" id="flip2">Funzionalità</a>  
+                                    <a class="btn btn-md pull-right" href="#section40"><i class="fa fa-anchor"></i></a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="panelN2">
+                                <ul>
+                                    <li class="active"><a class="btn btn-md" href="#section41">Mappa e ChargePoints</a></li>
+                                    <li class="active"><a class="btn btn-md" href="#section42">Ricerche sulla mappa</a></li>                     
+                                    <li class="active"><a class="btn btn-md" href="#section43">Informazioni sulla mappa</a></li>                     
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div>
+                                <h3>
+                                    <a class="btn btn-lg" data-toggle="collapse" data-parent="#accordion" data-target="#panelN3" id="flip3">Conclusioni</a>
+                                    <a class="btn btn-md pull-right" href="#section50"><i class="fa fa-anchor"></i></a>
+                                </h3>
+                            </div>
+                            <div class=" collapse" id="panelN3">
+                                <ul>
+                                    <li class="active"><a class="btn btn-md" href="#section51">Crediti</a></li>
+                                    <li class="active"><a class="btn btn-md" href="#section52">Considerazioni</a></li>                     
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-9" id="content">
+                    <h1 id="section20">Premesse</h1>
                     <div class="panel panel-primary" id="section2">
-                        <div class="panel-heading"><h1>Consegna</h1></div>
+                        <div class="panel-heading"><h3>Consegna</h3></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
                                 ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
@@ -117,7 +161,7 @@ and open the template in the editor.
 
                     </div>
                     <div class="panel panel-primary" id="section21">
-                        <div class="panel-heading"><h1>Tecnologie</h1></div>
+                        <div class="panel-heading"><h3>Tecnologie</h3></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
                                 ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
@@ -145,7 +189,7 @@ and open the template in the editor.
 
 
                     </div>
-                    <h1>Design</h1>
+                    <h1 id="section30">Design</h1>
                     <div class="panel panel-primary" id="section31">
                         <div class="panel-heading"><h3>Una pagina Responsive</h3></div>
                         <div class="panel-body">
@@ -290,9 +334,9 @@ and open the template in the editor.
                                 fringilla. In ac erat non magna accumsan aliquam.</p>                                         
                         </div>
                     </div>
-                    <h1>Funzionalità</h1>
+                    <h1 id="section40">Funzionalità</h1>
                     <div class="panel panel-primary" id="section41">
-                        <div class="panel-heading"><h1>Mappa e Charge Points</h1></div>
+                        <div class="panel-heading"><h3>Mappa e Charge Points</h3></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
                                 ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
@@ -320,7 +364,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="panel panel-primary" id="section42">
-                        <div class="panel-heading"><h1>Ricerche sulla mappa</h1></div>
+                        <div class="panel-heading"><h3>Ricerche sulla mappa</h3></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
                                 ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
@@ -348,7 +392,64 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="panel panel-primary" id="section43">
-                        <div class="panel-heading"><h1>Informazioni sulla mappa</h1></div>
+                        <div class="panel-heading"><h3>Informazioni sulla mappa</h3></div>
+                        <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p>                                         
+                        </div>
+                    </div>
+                    <h1 id="section50">Conclusioni</h1>
+                    <div class="panel panel-primary" id="section51">
+                        <div class="panel-heading"><h3>Crediti</h3></div>
+                        <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
+                                metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
+                                ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla
+                                enim, molestie eu ullamcorper quis, placerat a mauris. Proin vel magna
+                                ullamcorper, vulputate leo eu, egestas odio. Vivamus erat leo, egestas
+                                in euismod sed, fermentum nec magna. Nunc nisi enim, euismod a tellus sit
+                                amet, fermentum adipiscing ipsum. Fusce rhoncus diam ac neque aliquam convallis.
+                                Etiam malesuada, nibh id rutrum euismod, enim augue gravida dolor, at vulputate
+                                felis mi at magna. Nulla luctus, libero eget luctus gravida, sapien enim
+                                varius massa, adipiscing aliquet lacus mi eu eros. Duis pretium laoreet
+                                ullamcorper. Aenean in mauris nec libero tincidunt pharetra non et dui.
+                                Sed tortor turpis, mollis et tempus eu, auctor laoreet neque. Etiam eu
+                                tortor rutrum, rutrum mauris sit amet, hendrerit augue. Sed ut tincidunt
+                                nisi. Nam consectetur velit ac pharetra venenatis.</p>
+                            <p class="">Donec pellentesque id quam vel iaculis. Phasellus commodo tempor metus,
+                                eget sollicitudin odio ultricies id. Proin sed ipsum quis turpis suscipit
+                                luctus vitae id urna. Fusce et rhoncus quam. Etiam vel justo ligula. Nullam
+                                euismod lacinia risus a pulvinar. Pellentesque sit amet nisl eget ante
+                                vulputate feugiat. Suspendisse venenatis magna nunc, mollis facilisis neque
+                                condimentum ac. Vivamus non semper dui. Aenean sed eleifend dui. Vivamus
+                                a massa aliquam nibh consectetur luctus id at ligula. Nunc ipsum dolor,
+                                mollis at sem et, auctor rhoncus ipsum. Nulla faucibus venenatis est sit
+                                amet facilisis. In vestibulum nisi at tellus egestas, in pharetra enim
+                                fringilla. In ac erat non magna accumsan aliquam.</p>                                         
+                        </div>
+                    </div>
+                    <div class="panel panel-primary" id="section52">
+                        <div class="panel-heading"><h3>Considerrazioni</h3></div>
                         <div class="panel-body"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies,
                                 metus eget fringilla fermentum, sem justo pulvinar tellus, ac varius neque
                                 ante eget mi. Donec cursus nibh ultrices vulputate aliquet. Morbi nulla

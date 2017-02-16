@@ -1,17 +1,17 @@
 $(document).ready(function () {
     
-    $("#flip0").click(function () {
-        $("#panelN0").slideToggle("normal");
-    });
-    $("#flip1").click(function () {
-        $("#panelN1").slideToggle("normal");
-    });
-    $("#flip2").click(function () {
-        $("#panelN2").slideToggle("normal");
-    });
-    $("#flip3").click(function () {
-        $("#panelN3").slideToggle("normal");
-    });
+//    $("#flip0").click(function () {
+//        $("#panelN0").slideToggle("normal");
+//    });
+//    $("#flip1").click(function () {
+//        $("#panelN1").slideToggle("normal");
+//    });
+//    $("#flip2").click(function () {
+//        $("#panelN2").slideToggle("normal");
+//    });
+//    $("#flip3").click(function () {
+//        $("#panelN3").slideToggle("normal");
+//    });
 
     // Add smooth scrolling on all links inside the navbar
     $("#myScrollspy a").on('click', function (event) {
