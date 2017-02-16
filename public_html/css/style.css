@@ -13,7 +13,10 @@ body {
     font-size: .8em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.title{
+    font-size: 1.2 em;
+    padding: .8em;
+}
 /*#myScrollspy .nav-tabs-justified>.active>a, 
 #myScrollspy .nav-tabs-justified>.active>a:focus, 
 #myScrollspy .nav-tabs-justified>.active>a:hover,
@@ -38,7 +41,7 @@ div.col-sm-9 div {
 }
 header{
     background-color: rgba(255,87,44,1);
-    border-top: 3px solid #E64A19;
+    border-top: 30px solid #E64A19;
     border-bottom: 30px solid #E64A19;
 
 }
@@ -66,10 +69,18 @@ header>div{
     border-color: #FFCCBC;
 }
 
+
 /*Generic classes*/
 
 .btn-lg.focus, .btn-lg:focus, .btn-lg:hover{
     background-color: #FFCCBC;
+    color:#E64A19;
+}
+.btn-md{
+    padding-left: 1.2em;
+}
+.btn-md.focus, .btn-md:focus, .btn-md:hover{
+    
     color:#E64A19;
 }
 a {
@@ -81,6 +92,12 @@ a:hover, a:focus, a:active{
 }
 ul{
     list-style-type: none;
+}
+#accordion{
+    padding:0;
+}
+.panel-default{
+    border:none;
 }
 .parallax {
     /* The image used */
@@ -94,4 +111,26 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.parallax2{
+    background-color: #FF5722;
+    border-bottom: 2px solid #E64A19;
+    border-top: 20px solid #E64A19;
+    /* The image used */
+/*    background-image: url("../img/bgN.jpg");*/
+
+    /* Set a specific height */
+    min-height: 150px; 
+     /* Create the parallax scrolling effect */
+/*    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.parallax2 a{
+    color:#fff;
+}
+.parallax2 a:hover, .parallax2 a:focus, .parallax2 a:active{
+    color:#757575; 
+    background-color: rgba(255, 255, 255, 0.6);
 }
