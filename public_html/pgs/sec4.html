@@ -1,0 +1,293 @@
+<h1 id="section40"><i class="fa fa fa-map-marker"></i> Funzionalità</h1>
+<div class="panel panel-primary" id="section41">
+    <div class="panel-heading"><h3>Mappa e Charge Points</h3></div>
+    <div class="panel-body">
+        <p>Lo scopo principale della pagina è mostrare una mappa (recuperata direttamente dalle API fornite da Google)
+            su cui siano state integrate le informazioni forniteci dalle API di Mobility, contenenti i punti di ricarica da mostrare sulla mappa.</p>                             
+        <p>Il risultato è stato ottenuto grazie a:</p>
+        <ul>
+            <li>chiamate ajax di jquery per le API mobility</li>
+            <li>script asincroni per la mappa di Google</li>
+        </ul>
+        <p>
+            Ovvero attraverso attività eseguite in background che non interferiscono con il flusso di elaborazione principale.<br/> 
+            <strong>In questo modo la pagina inizia ad essere caricata mentre è ancora in attesa di ricevere i dati dai servizi!</strong>
+        </p>
+        <h3>Geolocalizzazione</h3>
+        <p>Su specifico consenso dell'utente viene localizzata la sua posizione sulla mappa e vengono caricate solamente le colonnine in un raggio di 10 chilometri attorno a quella posizione.
+            I successivi eventi di spostamento o zoom sulla mappa vengono intercettati, e in quel caso viene inviata una nuova chiamata al server per caricare le nuove colonnine da mostrare.
+            In questo modo viene notevolmente alleggerito il carico delle chiamate al server e si riduce il tempo complessivo di caricamento del sito.</p>
+
+    </div>
+</div>
+<div class="panel panel-primary" id="section42">
+    <div class="panel-heading"><h3>Ricerche sulla mappa</h3></div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Filtri</h3>
+                <ul>
+                    <li>tipo di infrastruttura</li>                    
+                    <li>tipo di connettore</li>                    
+                </ul>
+                <h3>Infrastrutture</h3>
+                <ul>    
+
+                    <li>Strutture pubbliche, direttamente gestite da Duferco Energia, per le quali sono disponibili informazioni sullo stato della colonnina.</li>
+                    <li>Strutture amiche, gestite da partner di Duferco Energia</li>
+                    <li>Tesla Supercharger, strutture di un'azienda leader nel settore</li>
+                    <li>Struttura ad accesso libero, non ancora presenti nel database.</li>
+                </ul>
+                <p>Questo filtro prevede che più opzioni possano essere selezionate contemporaneamente.</p>
+
+            </div>
+            <div class="col-md-6">
+                <h3>Connettori</h3>
+                <p>Questo filtro permette di selezionare univocamente un connettore per visualizzare sulla mappa soltanto le colonnine con connettore di quel tipo.</p>
+                <h3>Ricerche</h3>
+                <ul>
+                    <li>ricerca per indirizzo</li>
+                    <li>ricerca di un range attorno a un indirizzo</li>
+                </ul>
+                <p>Una barra di ricerca permette di inserire un indirizzo e selezionare tra varie proposte (fornite in base alla posizione dell'utente).
+                    Una volta effettuata la ricerca la mappa si sposta sulla località selezionata. È anche possibile modificare il range visualizzato attorno alla posizione scelta.</p>
+            </div>
+        </div>
+        <!--miniatures-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal16">
+                                <img src="img/img16.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal17">
+                                <img src="img/img17.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal18">
+                                <img src="img/img18.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modals -->
+        <div id="myModal16" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 480px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ricerca per tipo di presa</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img16.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal17" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 480px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Suggerimenti nella ricerca per indirizzo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img17.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal18" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 1030px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ricerca per range</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img18.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary" id="section43">
+    <div class="panel-heading"><h3>Informazioni sulla mappa</h3></div>
+    <div class="panel-body">
+        <h3> Marker Cluster</h3>
+        <p>I cluster forniti dalla libreria Marker Clusterer permettono, a bassi livelli di zoom, di raggruppare i pin delle colonnine più vicine tra loro. Aumentando il livello di zoom i cluster scompaiono mostrando i pin nelle loro posizioni esatte.</p>
+        <h3> Pin</h3>
+        <p>Segnalano sulla mappa la posizione dei punti di ricarica. A seconda del tipo di infrastruttura o dello stato della colonnina, possono assumere colori differenti. </p>
+        <h3>Infowindow</h3>
+        <p>Una finestra informativa che si apre cliccando sul pin di uno specifico chargepoint sulla mappa. 
+            Al suo interno sono mostrate le informazioni disponibili (indirizzo, contatti della struttura, accessibilità, stato dei connettori..) 
+            Elemento comune a tutte le infowindow è la presenza di una barra di ricerca che permette di settare la posizione di partenza da cui partire per raggiungere quella colonnina. 
+            La ricerca genera sulla mappa il percorso suggerito.</p>
+        <!--miniatures-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal19">
+                                <img src="img/img19.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal20">
+                                <img src="img/img20.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal21">
+                                <img src="img/img21.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal22">
+                                <img src="img/img22.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="spot-image">
+                        <div class="box-image">
+                            <a data-toggle="modal" data-target="#myModal23">
+                                <img src="img/img23.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal19" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 1030px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Pin e cluster su mappa fullscreen</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img19.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal20" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 1030px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Diversi tipi di pin su mappa fullscreen</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img20.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal21" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 1030px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Info window a confronto (1)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img21.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal22" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 1030px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Info window a confronto (2)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img22.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal23" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 1030px">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Info window a confronto (3)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="text-center" src="img/img23.png" alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

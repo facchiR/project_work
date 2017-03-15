@@ -37,11 +37,11 @@ a.startApp = function () {
 	Path.root("#/home"); // rotta di default: se non viene specificata alcuna route nell'url carica la home
 	Path.rescue(a.notFound); // se la rotta specificata non è valida esegue la funzione a.notFound
 	Path.listen(); //ENTRA IN AZIONE!
-	$('#int1').load('int1.html');
-	$('#sec2').load('sec2.html');
-	$('#sec3').load('sec3.html');
-	$('#sec4').load('sec4.html');
-	$('#sec5').load('sec5.html');
+	$('#int1').load('pgs/int1.html');
+	$('#sec2').load('pgs/sec2.html');
+	$('#sec3').load('pgs/sec3.html');
+	$('#sec4').load('pgs/sec4.html');
+	$('#sec5').load('pgs/sec5.html');
 	};
 
 $(a.startApp);

@@ -134,3 +134,30 @@ ul{
     color:#757575; 
     background-color: rgba(255, 255, 255, 0.4);
 }
+/*Image's' minatures style*/
+
+.spot-image { 
+    float: left; 
+    width: 64px; 
+    height: 64px; 
+    text-align: center; 
+    border: solid 3px #CCCCCC; 
+    overflow: hidden; 
+}
+ 
+.box-image {
+    margin: 2px; 
+    width: 60px; 
+    height: 60px; 
+    overflow: hidden;
+}  
+  
+.box-image img { 
+    margin: 0px; 
+    padding: 0px; 
+    height: 60px; 
+}
+
+.modal-body>img{
+    margin: auto;
+}
